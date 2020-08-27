@@ -1,0 +1,10 @@
+
+https://www.udemy.com/course/goprogramming/learn/lecture/7689712#overview
+https://tour.golang.org/basics/11
+https://golang.org/dl/
+
+go get github.com/grsmv/goweek
+
+git clone https//github.com/grsmv/goweek
+
+go run demo.go
