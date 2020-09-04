@@ -8,3 +8,8 @@ go get github.com/grsmv/goweek
 git clone https//github.com/grsmv/goweek
 
 go run demo.go
+
+cloud9 para programar en go
+
+//busca el main.go
+go run *.go
