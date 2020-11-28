@@ -14,7 +14,8 @@ import (
 //import "goweek/goweek"
 
 func main(){
-	//numerosPrimos(15)
+	//fmt.Println(divisores(13))
+	numerosPrimos(15)
 	//whatday(20)	
 	//whatday(7)
 	//arra2()
@@ -35,8 +36,30 @@ func main(){
 	//methoddemo()
 	//interfacedemo()
 	//goroutinedemo()
-	channeldemo()
+	//channeldemo()
 }
+
+func numerosPrimos(a int){
+	for i:=a; i >= 2; i--{
+		if divisores(i) <= 2 {
+			var s string 
+			s = strconv.Itoa(i)
+			fmt.Println(s)
+		}
+	}
+}
+
+func divisores(a int) (int){
+	var e1 int = 0
+	var e2 int = a
+	for i:=a; i >= 1; i--{
+		if e2%i == 0 {
+			e1++
+		}
+	}
+	return e1
+}
+
 
 func channeldemo(){
 	ch := make(chan string, 1)
@@ -462,26 +485,9 @@ func primero(){
 	}
 }
 
-func divisores(a int) (int){
-	var e1 int = 0
-	var e2 int = a
-	for i:=a; i >= 1; i--{
-		if e2%i == 0 {
-			e1++
-		}
-	}
-	return e1
-}
 
-func numerosPrimos(a int){
-	for i:=a; i >= 1; i--{
-		if divisores(i) <= 2 {
-			var s string 
-			s = strconv.Itoa(i)
-			fmt.Println(s)
-		}
-	}
-}
+
+
 
 /* func days(){
 	week, -:=goweek(2015, 46)
